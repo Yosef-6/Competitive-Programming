@@ -8,7 +8,7 @@ public:
             
             if(!maximize.empty() && maximize.top().second > heights[i]){
                 int saveIndex = i;
-                while(!maximize.empty() && maximize.top().second > heights[i]){
+                while(!maximize.empty() && maximize.top().second >= heights[i]){ // >=  resets equal elements 
                     auto& [index , hig] = maximize.top();
                     area = max(area,(i - index)*hig);
                     saveIndex = index;
