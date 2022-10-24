@@ -1,4 +1,4 @@
-//ya no list only pointer manip beats 99.96 percent runtime 
+//ya no list only pointer manip beats 99.96 percent runtime as well as 99.04 memory usage
 //also tle is fixed 
 class LRUCache {
 public:
